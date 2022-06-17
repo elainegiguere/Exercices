@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+/* font-family: 'Overpass', sans-serif;*/
+
+:root{
+--min-width: 37.5rem;
+--max-width: 144rem; 
+--Orange: hsl(25, 97%, 53%);
+--White: hsl(0, 0%, 100%);
+--LightGrey: hsl(217, 12%, 63%);
+--MediumGrey: hsl(216, 12%, 54%);
+--DarkBlue: hsl(213, 19%, 18%);
+--VeryDarkBlue: hsl(216, 12%, 8%);
+--font:'Overpass', sans-serif;
+}
+
+*{
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 1rem;
+
+}
+
+body{
+  font-size: 1.6rem;
+  font-family: var(--font);
+  display: grid;
+  align-items: center;
+  min-height: 100vh;
+  min-width: 100vw;
+  background-color: var(--VeryDarkBlue);
+
+}
+
+.container{
+  max-width: 400px;
+  min-width: min(350px, 100%);
+  margin: auto;
+  border-radius:10px;
+  background-color: var(--DarkBlue);
+
+}
+
+.star{
+  padding:2%;
+  background-color: var(--MediumGrey);
+  border-radius: 50%;
+  margin:5%;
+}
+
+h1{
+  color:var(--White); 
+  font-size: 1.5rem;
+}
+
+p{
+  font-size: 1rem;
+  font-weight: 400;
+  color:var(--LightGrey);
+  line-height: 1.5;
+}
+
+.btn{
+  border: none; 
+  min-width: 3rem;
+  max-width: 3rem;
+  max-height: 3rem;
+  min-height: 3rem;
+  margin: 5px;
+
+}
+.btn-round{
+  border-radius: 50%;
+
+}
+
+.btn-white{
+  background-color: var(--White);
+} 
+
+.btn-orange{
+  background-color:var(--Orange);
+} 
+
+/* le ButtonContainer fait que react ne répond plus et fige. Pas d'accès au inspecteur. */
